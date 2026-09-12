@@ -18,8 +18,12 @@ jobs:
 
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.47.4'
+          flutter-version: '3.47.1'
           channel: 'stable'
+          cache: true
+
+      - name: Flutter info
+        run: flutter --version
 
       - name: Get dependencies
         run: flutter pub get
