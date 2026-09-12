@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
   final phoneCtrl = TextEditingController();
   bool loading = false;
 
-  final String apiUrl = 'http://127.0.0.1:3000/users';
+  final String apiUrl = 'http://127.0.0.1:8080/api/index.php/users';
 
   Future<void> addUser() async {
     if (nameCtrl.text.isEmpty ||
